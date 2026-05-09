@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Mamá ❤️</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg,#ffd6e0,#ffe9c7);
+      overflow:hidden;
+      padding:20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:420px;
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+      border:1px solid rgba(255,255,255,0.3);
+      border-radius:30px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 10px 35px rgba(0,0,0,0.2);
+      animation:fadeIn 1.5s ease;
+    }
+
+    .photo{
+      width:100%;
+      border-radius:25px;
+      overflow:hidden;
+      margin-bottom:25px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .photo img{
+      width:100%;
+      display:block;
+      object-fit:cover;
+    }
+
+    h1{
+      color:#fff;
+      font-size:2rem;
+      margin-bottom:15px;
+      text-shadow:0 2px 10px rgba(0,0,0,0.25);
+    }
+
+    p{
+      color:#fff;
+      font-size:1.2rem;
+      line-height:1.8;
+      text-shadow:0 2px 8px rgba(0,0,0,0.25);
+    }
+
+    .heart{
+      margin-top:20px;
+      font-size:2rem;
+      animation:heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat{
+      0%{ transform:scale(1);}
+      25%{ transform:scale(1.15);}
+      50%{ transform:scale(1);}
+      75%{ transform:scale(1.15);}
+      100%{ transform:scale(1);}
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .bg-hearts{
+      position:absolute;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      z-index:-1;
+    }
+
+    .bg-hearts span{
+      position:absolute;
+      display:block;
+      color:rgba(255,255,255,0.4);
+      font-size:20px;
+      animation:float 10s linear infinite;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(100vh) scale(0);
+      }
+      100%{
+        transform:translateY(-10vh) scale(1.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-hearts">
+    <span style="left:10%; animation-duration:8s;">❤</span>
+    <span style="left:30%; animation-duration:12s;">❤</span>
+    <span style="left:50%; animation-duration:10s;">❤</span>
+    <span style="left:70%; animation-duration:14s;">❤</span>
+    <span style="left:90%; animation-duration:9s;">❤</span>
+  </div>
+
+  <div class="card">
+
+    <div class="photo">
+      <img src="tu-imagen.jpg" alt="Mamá">
+    </div>
+
+    <h1>Para ti, mami ❤️</h1>
+
+    <p>
+      “ Te amamos, mami. <br>
+      Gracias por ser padre y madre a la vez ”
+    </p>
+
+    <div class="heart">💖</div>
+
+  </div>
+
+</body>
+</html>
